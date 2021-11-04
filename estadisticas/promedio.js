@@ -14,12 +14,12 @@ return promedio;
 // Solucion con Metodo Array
 function calcularPromedioConMetodoArray(lista) {
     
-const sumaLista = lista.reduce(
-    function (valorAcumulado = 0, nuevoElemento) {
-        return valorAcumulado + nuevoElemento;
+    const sumaLista = lista.reduce(
+        function (valorAcumulado = 0, nuevoElemento) {
+            return valorAcumulado + nuevoElemento;
+        }
+    );
+    
+    const promedio = sumaLista / lista.length;
+    return promedio;
     }
-);
-
-const promedio = sumaLista / lista.length;
-return promedio;
-}
