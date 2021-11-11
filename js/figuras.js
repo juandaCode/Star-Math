@@ -15,14 +15,31 @@ console.log("Hello World");
     console.log("El perimetro del cuadrado es: " + perimetroCuadrado(48) + "cm");
     console.log("El perimetro del cuadrado es: " + areaCuadrado(35) + "cm2");
     console.groupEnd();
+
     //Funciones Cuadrado
+    function calcularAreaCuadrado(){
+        const input = document.getElementById("inputCuadrado");
+        const value = input.value;
+        const area = areaCuadrado(value);
+        document.getElementById("respuestaCuadrado").innerHTML = "El area es: " + area;
+    }
+    function areaCuadrado(lado){
+        return lado * lado;
+    }
+
+    function calcularPerimetroCuadrado(){
+        const input = document.getElementById("inputCuadrado");
+        const value = input.value;
+        const perimetro = perimetroCuadrado(value);
+        document.getElementById("respuestaCuadrado").innerHTML = "El perimetro es: " + perimetro;
+        console.log( perimetro);
+    }
+
     function perimetroCuadrado(lado){
         return lado * 4;
     }
 
-    function areaCuadrado(lado){
-        return lado * lado;
-    }
+   
     perimetroCuadrado(48);
     areaCuadrado(35);
 
@@ -63,16 +80,6 @@ console.log("Hello World");
     console.log("El area del circulo es: " + areaCirculo(6));
     console.groupEnd();
 
-    //Interaccion con HTML
-    function calcularPerimetroCuadrado(){
-        const input = document.getElementById("inputCuadrado");
-        const value = input.value;
-        const perimetro = perimetroCuadrado(value);
-        console.log( perimetro);
-    }
-    function calcularAreaCuadrado(){
-        const input = document.getElementById("inputCuadrado");
-        const value = input.value;
-        const area = areaCuadrado(value);
-        document.getElementById("respuestaCuadrado").innerHTML = "El area es: " + area;
-    }
+
+   
+    
