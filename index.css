@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 62.5%;
+}
+main {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px / 0;
+}
+.header {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.header_logo {
+    background-image: url(./images/logo2.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 200px;
+    height:200px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.header_menu {
+    background-image: url(./images/menu.svg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.header_menu:hover {
+    cursor: pointer;
+}
+.footer {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: stretch;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer_button {
+    width: 25%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8rem;
+    border: 3px solid #ffe259;
+}
+.footer_button:hover {
+    color: #2C3E50;
+    background-color: white;
+    cursor: pointer;
+}
+
+.body {
+    background-color: #2C3E50;
+   
+}
+.lista_menu {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    margin: 20px;
+    list-style: none;
+}
+.item > a {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.item > a:hover{
+   text-decoration: underline;
+}
+.close {
+    background-image: url(./images/close.svg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.close:hover {
+    cursor: pointer;
+}
