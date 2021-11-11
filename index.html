@@ -5,23 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>star Math</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/figuras.css">
 </head>
 <body>
     <main>
         <div class="container">
             <header class="header">
                 <span class="header_logo"></span>
-                <span id="btnModal" class="header_menu"></span>
+                <span id="btnModal" class="header_menu"><a href="./menu.html"></a></span>
             </header>
+
+            <section class="container_general">
+                <div class="container_figuras">
+                    <h1>Figuras geométricas</h1>
+                    <h2>Calcula el área de un perimetro</h2>
+                    <form class="form" action="">
+                        <label for="inputCuadrado">Escribe cada lado de tu cuadrado
+                        </label>
+                        <input id="inputCuadrado" type="number">
+    
+                        <button class="buttons" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                        <button class="buttons" type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    </form>
+                    <div class="respuesta">
+                        <p id="respuestaCuadrado"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container_general">
+                <div class="container_figuras">
+                    <h1>Figuras geométricas</h1>
+                    <h2>Calcula el área de un perimetro</h2>
+                    <form class="form" action="">
+                        <label for="inputCuadrado">Escribe cada lado de tu cuadrado
+                        </label>
+                        <input id="inputCuadrado" type="number">
+    
+                        <button class="buttons" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                        <button class="buttons" type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    </form>
+                    <div class="respuesta">
+                        <p id="respuestaCuadrado"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container_general">
+                <div class="container_figuras">
+                    <h1>Figuras geométricas</h1>
+                    <h2>Calcula el área de un perimetro</h2>
+                    <form class="form" action="">
+                        <label for="inputCuadrado">Escribe cada lado de tu cuadrado
+                        </label>
+                        <input id="inputCuadrado" type="number">
+    
+                        <button class="buttons" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                        <button class="buttons" type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    </form>
+                    <div class="respuesta">
+                        <p id="respuestaCuadrado"></p>
+                    </div>
+                </div>
+            </section>
+
             <footer class="footer">
-                <button class="footer_button">Estadistica</button>
-                <button class="footer_button">Salarios</button>
-                <button class="footer_button">Porcentajes</button>
-                <button class="footer_button">Figuras</button>
+                <button id="btnEstadistica" class="footer_button">Estadistica</button>
+                <button id="btnPorcentajes" class="footer_button">Porcentajes</button>
+                <button id="btnFiguras" class="footer_button" onclick="mostrarFiguras();">Figuras</button>
             </footer>
         </div>
     </main>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/figuras.js"></script>
+    <script src="./js/promedio.js"></script>
+    <script src="./js/moda.js"></script>
+    <script src="./js/mediana.js"></script>
+    <script src="./js/descuentos.js"></script>
 </body>
 </html>

@@ -22,6 +22,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px / 0;
 }
+
 .header {
     background-color: #2C3E50;
     display: flex;
@@ -31,7 +32,7 @@ main {
     grid-column-end: 4;
 }
 .header_logo {
-    background-image: url(./images/logo2.png);
+    background-image: url(../images/logo2.png);
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -42,7 +43,7 @@ main {
     margin-top: 30px;
 }
 .header_menu {
-    background-image: url(./images/menu.svg);
+    background-image: url(../images/menu.svg);
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -57,14 +58,15 @@ main {
 .footer {
     background-color: #2C3E50;
     display: flex;
+    width: 100%;
     justify-content: stretch;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 3;
 }
 .footer_button {
-    width: 25%;
+    width: 33.3%;
     background-color: transparent;
     color: white;
     font-size: 1.8rem;
@@ -114,4 +116,25 @@ main {
 }
 .close:hover {
     cursor: pointer;
+}
+
+#precioProducto {
+    width: 90%;
+    padding: 5px 0;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #ffe259;
+}
+#cupon {
+    width: 90%;
+    padding: 5px 0;
+    align-items: center;
+   
+    
+    border: 3px solid #ffe259;
+}
+#respuestaCuadrado {
+    font-size: 1.8rem;
+    text-align: center;
 }

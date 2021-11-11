@@ -43,4 +43,7 @@ else {
     return personaMitad;
 }
 
+const medianaGeneralCol = medianaSalarios(salariosColSorted);
+
+
 console.log(medianaSalarios(salariosColSorted));

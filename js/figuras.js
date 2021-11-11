@@ -1,5 +1,10 @@
 "use strict";
 
+
+function mostrarFiguras() {
+    document.getElementById("mainFiguras").style.display = 'block';
+
+}
 console.log("Hello World");
 
 //Codigo del Cuadrado
@@ -69,5 +74,5 @@ console.log("Hello World");
         const input = document.getElementById("inputCuadrado");
         const value = input.value;
         const area = areaCuadrado(value);
-        alert("El area es " + area);
+        document.getElementById("respuestaCuadrado").innerHTML = "El area es: " + area;
     }
